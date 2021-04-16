@@ -55,6 +55,6 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   removeButtonText: {
-    fontSize: 35,
+    fontSize: 30,
   },
 });

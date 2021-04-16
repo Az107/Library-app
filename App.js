@@ -5,21 +5,9 @@
  * @flow strict-local
  */
 
-import Config from './config';
 import React, {Component} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-  Image,
-} from 'react-native';
 
 import Header from './Components/Header';
 
@@ -56,12 +44,3 @@ export default class App extends Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  generalBackground: {
-    backgroundColor: '#30475e',
-  },
-  content: {
-    margin: 20,
-  },
-});

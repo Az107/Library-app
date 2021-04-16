@@ -3,15 +3,10 @@ import React, {Component} from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
-  Image,
-  Button,
   Pressable,
-  Alert,
   RefreshControl,
 } from 'react-native';
 
@@ -25,10 +20,9 @@ export default class MainPage extends Component {
       books: [],
       user: props.route.params.user,
     };
+    this.refreshing = true;
     this.getBooks();
   }
-
-  refreshing = false;
 
   getBooks() {
     console.log('Fetiching books...');
